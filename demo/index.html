@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)https://ai-spellcasting-academy-jingya.karenl9014.chatgpt.site/demo/ -->
+<html lang="zh-Hant"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>旅遊小神器｜日本岡山 5 天 4 夜</title><style>*{box-sizing:border-box}body{margin:0;background:#f3f1e8;color:#244738;font-family:'Microsoft JhengHei','PingFang TC',sans-serif}.app{max-width:450px;margin:auto;padding:25px 18px 30px}.eyebrow{font:9px Georgia,serif;letter-spacing:2px;color:#7c937f}h1{font-family:'PMingLiU',serif;font-size:28px;font-weight:600;margin:12px 0 6px}p{font-size:11px;color:#7a8a76;margin:0;line-height:1.7}.days{display:flex;gap:9px;margin:21px 0 17px}.days button{flex:1;background:#e4e7db;color:#5f795f;border:1px solid #d5dccb;border-radius:8px;padding:11px 8px;font-size:12px;cursor:pointer}.days button.active{background:#335d47;color:#fff;border-color:#335d47}.date{font-size:11px;color:#71856f;margin:15px 0 9px}.card{background:#fffefa;border:1px solid #e0e4d7;border-radius:10px;padding:14px;margin-bottom:10px}.card small{font-size:10px;color:#9a885d}.card h2{font-size:16px;font-weight:500;margin:7px 0}.card p{font-size:11px}.cost{color:#516c4d;font-size:11px;margin-top:10px;display:block}.total{background:#e9e1cb;padding:16px 14px;border-radius:9px;margin:0 0 15px;display:flex;justify-content:space-between;align-items:center}.total span{font-size:11px}.total strong{font:19px Georgia,serif}.hint{margin-top:14px;text-align:center;font-size:9px;color:#96a18c}button:focus-visible{outline:3px solid #a18039;outline-offset:3px}@media(min-width:600px){.app{padding-top:50px}h1{font-size:36px}.card{padding:22px}.card h2{font-size:20px}.card p,.cost,.date{font-size:13px}.days button{font-size:14px}}
+.days{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:5px}.days button{min-width:0;padding:10px 1px;font-size:10px;white-space:nowrap}.days button:focus-visible{outline:2px solid #a18039;outline-offset:2px}.total{margin:0 0 15px;gap:8px}.total strong{white-space:nowrap}.summary{margin:0 0 14px;line-height:1.8;font-size:11px}.expense-section{margin-top:20px;border-top:1px solid #d7dece;padding-top:15px}.expense-section h2{font-size:14px;font-weight:500;margin:0 0 10px}.expense-row{display:flex;justify-content:space-between;gap:12px;font-size:11px;color:#637a5b;padding:7px 0;border-bottom:1px solid #e1e6d8}.expense-row strong{font-weight:500;white-space:nowrap}.date{font-size:13px;font-weight:500;line-height:1.7}.hint{line-height:1.8}button{touch-action:manipulation}@media(min-width:600px){.days button{font-size:12px}.date{font-size:16px}.summary,.expense-row{font-size:13px}}</style></head><body><main class="app"><div class="eyebrow">OKAYAMA / FAMILY TRAVEL</div><h1>岡山，慢慢玩。</h1><p>日本岡山 5 天 4 夜 · 日圓 JPY</p><nav class="days" aria-label="選擇旅遊日期"><button data-day="1" aria-pressed="true" class="active">DAY 1</button><button data-day="2" aria-pressed="false">DAY 2</button><button data-day="3" aria-pressed="false">DAY 3</button><button data-day="4" aria-pressed="false">DAY 4</button><button data-day="5" aria-pressed="false">DAY 5</button></nav><section class="total" aria-label="當日支出統計"><span>當日總支出</span><strong id="daily-total" aria-live="polite">JPY 2,800</strong></section><div class="date" id="date-label">DAY 1 · 抵達岡山・市區散策</div><p class="summary" id="day-summary">桃太郎的故鄉，先以悠閒的步調熟悉市區</p><section id="itinerary" aria-label="當日行程"><article class="card"><small>抵達後 / 交通</small><h2>抵達岡山・寄放行李</h2><p>依實際班機或鐵路到達時間調整</p></article><article class="card"><small>下午 / 購物</small><h2>岡山站周邊散步與購物</h2><p>採買交通卡、補給品</p></article><article class="card"><small>傍晚 / 景點</small><h2>岡山城周邊散步</h2><p>抵達過晚可改為夜間外觀散步</p></article><article class="card"><small>晚上 / 美食</small><h2>岡山在地晚餐</h2><p>可選擇豬排丼或壽司等</p></article></section><section class="expense-section" aria-label="當日支出明細"><h2>今日支出明細</h2><div id="expenses"><div class="expense-row"><span>晚餐</span><strong>JPY 2,200</strong></div><div class="expense-row"><span>市區交通</span><strong>JPY 600</strong></div></div></section><p class="hint">教學假資料 · 非實際票價或完整旅費<br>尚未指定日期、航班與住宿；出發前請確認營業時間與交通。</p></main><script>
+/* 日本岡山 5天4夜：旅遊小神器教學示範資料
+ * 此為示範行程，非實際航班、票券或訂房。時間為建議節奏，不代表店家營業時間。
+ * 預估支出是教學用假資料，單位 JPY。
+ */
+const okayamaTrip = {
+  title: '日本岡山 5 天 4 夜',
+  subtitle: '晴天之國 · 岡山／倉敷／吉備／瀨戶內海',
+  destination: '日本・岡山',
+  duration: { days: 5, nights: 4 },
+  base: '岡山車站周邊（示範住宿地點，尚未訂房）',
+  currency: 'JPY',
+  note: '行程與費用皆為教學示範。尚未指定旅遊日期、航班與住宿；景點開放時間、交通及船班請出發前再次確認。',
+  days: [
+    {
+      day: 1, title: '抵達岡山・市區散策', area: '岡山市',
+      summary: '桃太郎的故鄉，先以悠閒的步調熟悉市區',
+      activities: [
+        { time: '抵達後', name: '抵達岡山・寄放行李', category: '交通', memo: '依實際班機或鐵路到達時間調整' },
+        { time: '下午', name: '岡山站周邊散步與購物', category: '購物', memo: '採買交通卡、補給品' },
+        { time: '傍晚', name: '岡山城周邊散步', category: '景點', memo: '抵達過晚可改為夜間外觀散步' },
+        { time: '晚上', name: '岡山在地晚餐', category: '美食', memo: '可選擇豬排丼或壽司等' }
+      ],
+      expenses: [{ label: '晚餐', amount: 2200 }, { label: '市區交通', amount: 600 }]
+    },
+    {
+      day: 2, title: '岡山後樂園・岡山城', area: '岡山市',
+      summary: '漫步日本庭園，參觀烏城與旭川河畔',
+      activities: [
+        { time: '09:00', name: '岡山後樂園', category: '景點', memo: '庭園漫步、拍照' },
+        { time: '11:30', name: '旭川河畔散步', category: '散步', memo: '步行至岡山城周邊' },
+        { time: '13:00', name: '岡山城', category: '景點', memo: '參觀展區；依官方票價與開館日調整' },
+        { time: '16:00', name: '表町商店街', category: '購物', memo: '咖啡、甜點與自由活動' }
+      ],
+      expenses: [{ label: '景點門票（示意）', amount: 1200 }, { label: '午晚餐', amount: 3200 }, { label: '交通', amount: 500 }]
+    },
+    {
+      day: 3, title: '倉敷美觀地區・大原美術館', area: '倉敷市',
+      summary: '白壁街屋、柳樹河道與經典美術館',
+      activities: [
+        { time: '09:00', name: 'JR 前往倉敷', category: '交通', memo: '從岡山站出發' },
+        { time: '10:00', name: '倉敷美觀地區', category: '景點', memo: '白壁街屋、倉敷川散步' },
+        { time: '13:00', name: '大原美術館', category: '景點', memo: '依實際開館資訊安排' },
+        { time: '15:30', name: '倉敷特色小店・咖啡店', category: '購物', memo: '牛仔布雜貨、甜點等' },
+        { time: '傍晚', name: '返回岡山市', category: '交通', memo: '依當日狀況彈性調整' }
+      ],
+      expenses: [{ label: '往返交通（示意）', amount: 800 }, { label: '美術館（示意）', amount: 2000 }, { label: '餐飲', amount: 2800 }, { label: '購物', amount: 1500 }]
+    },
+    {
+      day: 4, title: '吉備路・歷史散策', area: '岡山／總社',
+      summary: '走訪吉備津神社與吉備路田園風光',
+      activities: [
+        { time: '09:00', name: '吉備津神社', category: '景點', memo: '欣賞神社建築與長迴廊' },
+        { time: '11:30', name: '吉備津彥神社（可選）', category: '景點', memo: '視移動方式與體力取捨' },
+        { time: '下午', name: '備中國分寺周邊', category: '景點', memo: '交通銜接需事前確認；可改安排岡山市區' },
+        { time: '晚上', name: '岡山站周邊自由活動', category: '購物', memo: '準備伴手禮' }
+      ],
+      expenses: [{ label: '交通（示意）', amount: 1800 }, { label: '餐飲', amount: 2600 }, { label: '伴手禮', amount: 2000 }]
+    },
+    {
+      day: 5, title: '岡山伴手禮・返程', area: '岡山市',
+      summary: '輕鬆收尾，預留往返機場或車站時間',
+      activities: [
+        { time: '上午', name: '岡山站周邊早餐', category: '美食', memo: '依退房時間安排' },
+        { time: '中午前後', name: '伴手禮採買', category: '購物', memo: '桃子點心、吉備糰子等' },
+        { time: '返程前', name: '前往機場或下一個城市', category: '交通', memo: '實際時刻依班機或鐵路安排' }
+      ],
+      expenses: [{ label: '餐飲', amount: 1600 }, { label: '伴手禮', amount: 2500 }, { label: '返程交通（示意）', amount: 1200 }]
+    }
+  ]
+};
+
+const currency = amount => 'JPY ' + amount.toLocaleString('zh-TW');
+function render(dayNumber) {
+  const today = okayamaTrip.days.find(day => day.day === dayNumber);
+  document.querySelectorAll('[data-day]').forEach(button => {
+    const active = Number(button.dataset.day) === dayNumber;
+    button.classList.toggle('active', active);
+    button.setAttribute('aria-pressed', String(active));
+  });
+  document.getElementById('date-label').textContent = 'DAY ' + today.day + ' · ' + today.title;
+  document.getElementById('day-summary').textContent = today.summary;
+  document.getElementById('itinerary').innerHTML = today.activities.map(item => `<article class="card"><small>${item.time} / ${item.category}</small><h2>${item.name}</h2><p>${item.memo}</p></article>`).join('');
+  document.getElementById('expenses').innerHTML = today.expenses.map(item => `<div class="expense-row"><span>${item.label}</span><strong>${currency(item.amount)}</strong></div>`).join('');
+  const total = today.expenses.reduce((sum, item) => sum + item.amount, 0);
+  document.getElementById('daily-total').textContent = currency(total);
+}
+document.querySelectorAll('[data-day]').forEach(button => button.addEventListener('click', () => render(Number(button.dataset.day))));
+render(1);
+</script>
+</body></html>
